@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>BOOKING APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="text-center mt-3">Booking App</h1>
+  </header>
+
+  <section class="container my-5">
+    <form id="my-form">
+      <h1 class="text-center mb-4">Add User</h1>
+      <div class="msg alert" role="alert"></div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-control" autocomplete="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="text" id="email" class="form-control" autocomplete="name">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number:</label>
+        <input type="text" id="phone" class="form-control" autocomplete="tel">
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <ul id="listOfItems" class="list-group mt-4"></ul>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
